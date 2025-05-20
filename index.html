@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       nav{
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #feffff;
+            padding: 0 10%;
+            
+            
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+    }
+    button{
+        margin-left: 25px;
+        width: 160px;
+        height: 40px;
+        border-radius: 100px;
+        border: none;
+        background-color: purple;
+        color: white
+    }
+    .button2{
+        margin-top: 25px;
+        width: 160px;
+        height: 40px;
+        border-radius: 100px;
+        border: none;
+        background-color: purple;
+        color: white
+    }
+    button:hover{
+        background-color: #dd64d5;
+        transition: 0.3s;
+    }
+    .section1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
+        ;
+    }
+    .text{
+        width: 50%;
+        font-size: 25px;
+
+    }
+    .p1{
+        font-size: 20px;
+        color: #dd64d5;
+    }
+    .p2{
+        font-size: 50px;
+        color: #020703;
+    }
+    .p3{
+        font-size: 50px;
+        color: #020703;
+    }
+    .p4{
+        font-size: 20px;
+        color: #020703;
+        margin-top: 20px;
+    }
+  .img{
+        width: 500px;
+        height: 400px;
+         margin-top: 50px;
+        border: 1px solid #020703;
+        border-radius: 50px;
+    }
+    h2{
+        text-align: center;
+        font-size: 50px;
+        margin-top: 50px;
+        text-decoration:  underline;
+    }
+    .image{
+        margin-top: 50px;
+        margin-left: 150px;
+        gap: 20px;
+        justify-content: space-evenly;
+        border-radius: 15px;
+        border: 1px solid rgb(249, 252, 249)
+    }
+    .img2{
+        margin-top: 50px;
+        margin-left: 150px;
+        gap: 20px;
+        justify-content: space-evenly;
+        border-radius: 15px;
+        border: 1px solid rgb(249, 252, 249)
+    }
+    .section2{ 
+        font-size: 30px;
+        margin-top: 15px;
+        margin-left: 80px;
+    }
+    
+    .w3{
+        font-size: 20px;
+        color: white;
+        background-color: #6a0262cd ;
+        width: 100px;
+        align-items: center;
+        font-size: 30px;
+    }
+    .lorem{
+        margin-top: 15px;
+        margin-right: 600px;
+        gap: 20px;
+        justify-content: space-evenly;
+        border-radius: 15px;
+        border: 1px solid rgb(249, 252, 249)
+    }
+    
+    .p10{
+        font-size: 40px;
+        font-style: bold;
+        padding-left: 40px;
+    }
+    .team-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background-color: #ece5e5;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+      padding: 20px;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card h2 {
+      margin-top: 15px;
+    }
+    .card h3 {
+      color: #777;
+    }
+    .social-icons {
+      margin-top: 10px;
+      display: flex;
+    }
+    
+    .facebook{
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+       
+       
+    }
+    .twitter{
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+    .instagram{
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+    .pricing-main{
+      height: 500px;
+      width: 100%;
+      background-color: #0707af;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      
+      font-family: Arial, sans-serif;
+    }
+
+    .pricing-container {
+      display: flex;
+      gap: 20px;
+      margin-left: 580px;
+      margin-top: 50px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      width: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+      
+    }
+
+    .card h2 {
+      margin: 20px 0 5px;
+      color: #3c3b6e;
+      font-size: 24px;
+    }
+
+    .card p.subtitle {
+      color: #777;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .price-section {
+      background-color: #3c3b6e;
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .price-section span {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .price-section small {
+      font-size: 16px;
+    }
+
+    .features {
+      padding: 20px;
+      text-align: left;
+      width: 100%;
+    }
+
+    .features li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+
+    .features li::before {
+      content: "✔";
+      color: #5e5ec1;
+      margin-right: 8px;
+    }
+
+    .get-started {
+      background-color: #8b6cf1;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      margin: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .get-started:hover {
+      background-color: #755ddc;
+    }
+    
+
+    
+
+    
+
+    
+
+    
+
+    .card button {
+      background: #8C6FF0;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      margin: 20px auto 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .card button:hover {
+      background: #7b5de3;
+    }
+    .view{
+        text-align: center;
+        font-size: 50px;
+        margin-top: 50px;
+        font-style: bold;
+        
+    }
+    .view2{
+        text-align: center;
+        font-size: 15px;
+    }
+    .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+   .video-container iframe {
+            width: 1000px;
+            height: 500px;
+            border-radius: 20px;
+            margin-bottom: 50px;
+        }
+   .videomaincontainer{
+          background-color: rgb(238, 225, 238);
+          height: 100%;
+          width: 100%;
+        }
+  .card2-main{
+  font-family: Arial, sans-serif;
+  background: #fff;
+  padding: 40px;
+}
+
+.card2-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card2 {
+  width: 220px;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  position: relative;
+  text-align: left;
+  background: white;
+}
+
+.card2-header {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+ /
+}
+
+.verified {
+  position: absolute;
+  right: -10px;
+  background-color: #7b61ff;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+}
+
+.card2-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 30px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card2 h3 {
+  margin: 12px 0 4px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c2c2c;
+}
+
+.card2 p {
+  color: #bbb;
+  font-size: 14px;
+}
+
+.card2 a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #7b61ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.ttimg {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 30px;
+  height: 300px;
+  object-fit: cover;
+}
+.clients-header{
+  margin: 0;
+  padding: 40px;
+  font-family: sans-serif;
+  background-color: #ffffff;
+align-content: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #020703;
+}
+
+.clients-main{
+  display: flex;
+  gap: 24px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 10px;
+ margin-left: 335px;
+}
+
+.clients-container{
+  min-width: 180px;
+  height: 180px;
+  background-color: #f7f5ff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.clients-logo img {
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: contain;
+}
+.text-last{
+  margin-top: 200px;
+    margin-left: 300px;
+    font-size: 40px;
+    font-style: bold;
+    font-weight: 600;
+    
+}
+.text-last2{
+  
+    margin-left: 300px;
+    font-size: 40px;
+    font-style: bold;
+    font-weight: 600;
+}
+.text-last3{
+  margin-top: 25px;
+    margin-left: 300px;
+    font-size: 20px;
+}
+.section3{
+  background-color: #f7f5ff;
+  height: 350px;
+  width: 315px;
+  margin-left: 1000px;
+  margin-top: -250px;
+  padding: 25px;
+  
+
+}
+.lorem-main{
+  margin-top: -130px;
+  margin-left: 300px;
+  font-size: medium;
+}
+.text-contact{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.text-contact2{
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+.lasttext-main{
+   font-size: medium;
+}
+.map{
+  margin-top: 50px;
+  width: 100%;
+  height: 400px;
+}
+.footer-main{
+  display: flex;
+  gap: 20px;
+ align-items: center;
+  background-color: hsl(0, 0%, 98%); 
+  height: 100px; 
+}
+.footer1{
+  font-size: 20px;
+  margin-left: 500px;
+  font-weight: bold;
+}
+.footer2{
+  font-size: 20px;
+  margin-left: 100px;
+}
+.footer-icons{
+  margin-left: 300px;
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+  
+}
+.footer-icons :hover{
+  background-color: #0f0108;
+  transition: 0.3s;
+}
+.Aboutus{
+  margin-left: 250px;
+}
+.features-container{
+  display: flex;
+  justify-content: space-between;
+
+  padding: 50px;
+  padding-left: 100px;
+  /*border: 1px solid #0f0d0d;*/
+  padding-right: 100px;
+}
+.Wallet-features{
+ height: 300px;
+  width: 300px;
+  padding: 20px;
+  background-color: #ebf0f1e5;
+  border-radius: 20px;;
+  
+}
+
+.features-icons{
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  
+}
+.skills-main{
+  background-color:white;
+  height: 600px;
+  width: 100%;
+  margin: 300px;
+  margin-top: -40px;
+  margin-bottom: -350px;
+}
+.skills-container1{
+  background-color: #626161;
+  height: 5px;
+  width: 300px;
+  margin-left: 50px;
+  border-radius: 2px;
+  
+}
+.skills-container2{
+  background-color: #3816e3;
+  height: 5px;
+  width: 250px;
+  margin-top: 10px;
+  border-radius: 2px;
+  
+}
+.skills-text{
+  font-size: 20px;
+  margin-top: 80px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+.skills-main2{
+margin-left: 400px;
+  margin-top: -115px;
+}
+.skills-container12{
+  background-color: #626161;
+  height: 5px;
+  width: 300px;
+  margin-left: 50px;
+  border-radius: 2px;
+}
+.skills-container22{
+  background-color: #3816e3;
+  height: 5px;
+  width: 150px;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+    .skills-main3{
+      margin-left: 800px;
+      margin-top: -115px;
+    }
+ .skills-container123{
+  background-color: #626161;
+  height: 5px;
+  width: 300px;
+  margin-left: 50px;
+  border-radius: 2px;
+}
+.skills-container223{ 
+  background-color: #3816e3;
+  height: 5px;
+  width: 260px;
+  margin-top: 10px;
+  border-radius: 2px;
+}   
+.skills-container4{
+  background-color: #626161;
+  height: 5px;
+  width: 300px;
+  margin-left: 50px;
+  border-radius: 2px;
+}
+.skills-container42{
+  background-color: #3816e3;  
+  height: 5px;
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+.skills-container5{
+  background-color: #626161;
+  height: 5px;
+  width: 300px;
+  margin-left: 50px;
+  border-radius: 2px;
+}
+.skills-container52{
+  background-color: #3816e3;
+  height: 5px;
+  width: 200px; 
+  margin-top: 10px;
+  border-radius: 2px;
+}
+.skills-container6{
+  background-color: #626161;
+  height: 5px;
+  width: 300px;
+  margin-left: 50px;
+  border-radius: 2px;
+}
+.skills-container62{
+  background-color: #3816e3;
+  height: 5px;
+  width: 250px;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+    
+
+
+
+
+
+    
+    
+
+    </style>
+    <body>
+        <nav>
+            <div class="logo">
+                <h1>Crypto M5</h1>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>Home</a></li>
+                    <li>About</li>
+                    <li>features</li>
+                    <li>Contact</li>
+                </ul>
+                <button>Get Started</button>
+            </div>
+        </nav>
+        <section class="section1">
+            <div class="text">
+                <p class="p1">CRYPTO PLATFORM</p>
+                <p class="p2">Crypto Trade</p>
+                <p class="p3">Agency</p>
+                <p class="p4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt labore dolore magna aliqua.</p>
+                <button class="button2">Get Started</button>
+            </div>
+            <div><img class="img"  src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/features4.jpg"></div>
+        </section>
+        <!--our features-->
+        <section class="features-main">
+        <h2>Our Features</h2>
+        <div class="features-container">
+          <div class="Wallet-features">
+            <p>
+              <svg class="features-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8C1AF6"><path d="M240-160q-66 0-113-47T80-320v-320q0-66 47-113t113-47h480q66 0 113 47t47 113v320q0 66-47 113t-113 47H240Zm0-480h480q22 0 42 5t38 16v-21q0-33-23.5-56.5T720-720H240q-33 0-56.5 23.5T160-640v21q18-11 38-16t42-5Zm-74 130 445 108q9 2 18 0t17-8l139-116q-11-15-28-24.5t-37-9.5H240q-26 0-45.5 13.5T166-510Z"/></svg>
+            </p>
+            <h4>Wallets</h4>
+            <p>Lorem ipsum dolor sit <br>amet, consectetur <br>adipiscing elit, sed<br> eiusmod tempor <br>incididunt.</p>
+          </div>
+
+          <div class="Wallet-features">
+            <p>
+              <svg class="features-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8C1AF6"><path d="M549-120 280-400v-80h140q53 0 91.5-34.5T558-600H240v-80h306q-17-35-50.5-57.5T420-760H240v-80h480v80H590q14 17 25 37t17 43h88v80h-81q-8 85-70 142.5T420-400h-29l269 280H549Z"/></svg>
+            </p>
+            <h4>Trade</h4>
+            <p>Lorem ipsum dolor sit <br>amet, consectetur <br>adipiscing elit, sed<br> eiusmod tempor <br>incididunt.</p>
+          </div>
+
+          <div class="Wallet-features">
+            <p>
+              <svg class="features-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8C1AF6"><path d="m140-220-60-60 300-300 160 160 284-320 56 56-340 384-160-160-240 240Z"/></svg>
+            </p>
+            <h4>Exchange</h4>
+            <p>Lorem ipsum dolor sit <br>amet, consectetur <br>adipiscing elit, sed<br> eiusmod tempor <br>incididunt.</p>
+          </div>
+
+          <div class="Wallet-features">
+            <p>
+              <svg class="features-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8C1AF6"><path d="M240-160q-66 0-113-47T80-320v-320q0-66 47-113t113-47h480q66 0 113 47t47 113v320q0 66-47 113t-113 47H240Zm0-480h480q22 0 42 5t38 16v-21q0-33-23.5-56.5T720-720H240q-33 0-56.5 23.5T160-640v21q18-11 38-16t42-5Zm-74 130 445 108q9 2 18 0t17-8l139-116q-11-15-28-24.5t-37-9.5H240q-26 0-45.5 13.5T166-510Z"/></svg>
+            </p>
+            <h4>Wallets</h4>
+            <p>Lorem ipsum dolor sit <br>amet, consectetur <br>adipiscing elit, sed<br> eiusmod tempor <br>incididunt.</p>
+          </div>
+         </div>
+
+         <div class="features-container">
+          <div class="Wallet-features">
+            <p>
+              <svg class="features-icons"  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8C1AF6"><path d="M280-280h80v-200h-80v200Zm320 0h80v-400h-80v400Zm-160 0h80v-120h-80v120Zm0-200h80v-80h-80v80ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg>
+            </p>
+            <h4>Analysis</h4>
+            <p>Lorem ipsum dolor sit <br>amet, consectetur <br>adipiscing elit, sed<br> eiusmod tempor <br>incididunt.</p>
+          </div>
+
+          <div class="Wallet-features">
+            <p>
+              <svg  class="features-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8C1AF6"><path d="M360-120v-80H240v-80h80v-400h-80v-80h120v-80h80v80h80v-80h80v85q52 14 86 56.5t34 98.5q0 29-10 55.5T682-497q35 21 56.5 57t21.5 80q0 66-47 113t-113 47v80h-80v-80h-80v80h-80Zm40-400h160q33 0 56.5-23.5T640-600q0-33-23.5-56.5T560-680H400v160Zm0 240h200q33 0 56.5-23.5T680-360q0-33-23.5-56.5T600-440H400v160Z"/></svg>
+            </p>
+            <h4>Crypto</h4>
+            <p>Lorem ipsum dolor sit <br>amet, consectetur <br>adipiscing elit, sed<br> eiusmod tempor <br>incididunt.</p>
+          </div>
+
+          <div class="Wallet-features">
+            <p>
+              <svg class="features-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8C1AF6"><path d="M240-160q-66 0-113-47T80-320v-320q0-66 47-113t113-47h480q66 0 113 47t47 113v320q0 66-47 113t-113 47H240Zm0-480h480q22 0 42 5t38 16v-21q0-33-23.5-56.5T720-720H240q-33 0-56.5 23.5T160-640v21q18-11 38-16t42-5Zm-74 130 445 108q9 2 18 0t17-8l139-116q-11-15-28-24.5t-37-9.5H240q-26 0-45.5 13.5T166-510Z"/></svg>
+            </p>
+            <h4>Wallets</h4>
+            <p>Lorem ipsum dolor sit <br>amet, consectetur <br>adipiscing elit, sed<br> eiusmod tempor <br>incididunt.</p>
+          </div>
+
+          <div class="Wallet-features">
+            <p>
+              <svg class="features-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8C1AF6"><path d="M240-160q-66 0-113-47T80-320v-320q0-66 47-113t113-47h480q66 0 113 47t47 113v320q0 66-47 113t-113 47H240Zm0-480h480q22 0 42 5t38 16v-21q0-33-23.5-56.5T720-720H240q-33 0-56.5 23.5T160-640v21q18-11 38-16t42-5Zm-74 130 445 108q9 2 18 0t17-8l139-116q-11-15-28-24.5t-37-9.5H240q-26 0-45.5 13.5T166-510Z"/></svg>
+            </p>
+            <h4>Trade</h4>
+            <p>Lorem ipsum dolor sit <br>amet, consectetur <br>adipiscing elit, sed<br> eiusmod tempor <br>incididunt.</p>
+          </div>
+         </div>
+
+   </section>
+        
+
+<!--About Us-->
+<h2>About Us</h2>
+<section class="Aboutus">
+<div class="section2 main">
+    <p class="w3 section2">Wallets</p>
+    
+    <p class="section2">Trade</p>
+
+    <p class="section2">Exchange</p>
+
+</div>
+<div class ="lorem-main">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut placerat felis. Etiam nec rhoncus purus, a sollicitudin<br>
+        turpis. Pellentesque sit amet justo purus. Cras ac interdum dui. Mauris placerat non metus eu venenatis. Nam eget ornare<br>
+        lorem, quis pulvinar lacus. Etiam mauris lorem, molestie eu sapien sed, suscipit faucibus nisi. Proin lobortis blandit mauris,<br>
+        sit amet tempus felis finibus fringilla. Phasellus mattis consectetur sagittis. Aenean bibendum scelerisque nulla in<br>
+        consequat. Nam sed lobortis velit, non porta sem. Vestibulum pharetra, lorem et malesuada volutpat, leo augue rhoncus dui,<br>
+        et auctor dolor arcu non ligula</p>
+</div>
+</section>
+<!--Our Traders-->
+    <h2>Our Traders</h2>
+    <div class="team-container">
+        <div class="card">
+          <img src="./Screenshot 2025-05-13 at 2.21.04 PM.png" alt="John Smith">
+          <h2>John Smith</h2>
+          <h3>TRADER</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="social-icons">
+            <i class="facebook"><img height="80px" width="80px" src="https://cdn-icons-png.freepik.com/256/15707/15707884.png?semt=ais_hybrid"></i>
+            <i class="twitter"><img height="80px" width="80px" src="https://cdn-icons-png.freepik.com/256/2111/2111463.png?semt=ais_hybrid"></i>
+            </i>
+            <i class="instagram">
+                <img height="80px" width="80px" src="https://cdn-icons-png.freepik.com/256/5968/5968830.png?ga=GA1.1.904181943.1747168002&semt=ais_hybrid">
+            </i>
+          </div>
+        </div>
+    
+        <div class="card">
+          <img src="./Screenshot 2025-05-13 at 2.21.24 PM.png" alt="Sarah Palmer">
+          <h2>Sarah Palmer</h2>
+          <h3>TRADER</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="social-icons">
+            <i class="facebook"><img height="80px" width="80px" src="https://cdn-icons-png.freepik.com/256/15707/15707884.png?semt=ais_hybrid"></i>
+            <i class="twitter"><img height="80px" width="80px" src="https://cdn-icons-png.freepik.com/256/2111/2111463.png?semt=ais_hybrid"></i>
+            </i>
+            <i class="instagram">
+                <img height="80px" width="80px" src="https://cdn-icons-png.freepik.com/256/5968/5968830.png?ga=GA1.1.904181943.1747168002&semt=ais_hybrid">
+            </i>
+          </div>
+        </div>
+    
+        <div class="card">
+          <img src="./Screenshot 2025-05-13 at 2.21.36 PM.png" alt="Adam Swift">
+          <h2>Adam Swift</h2>
+          <h3>TRADER</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="social-icons">
+            <i class="facebook"><img height="80px" width="80px" src="https://cdn-icons-png.freepik.com/256/15707/15707884.png?semt=ais_hybrid"></i>
+            <i class="twitter"><img height="80px" width="80px" src="https://cdn-icons-png.freepik.com/256/2111/2111463.png?semt=ais_hybrid"></i>
+            </i>
+            <i class="instagram">
+                <img height="80px" width="80px" src="https://cdn-icons-png.freepik.com/256/5968/5968830.png?ga=GA1.1.904181943.1747168002&semt=ais_hybrid">
+            </i>
+          </div>
+        </div>
+    
+        <div class="card">
+          <img src="Screenshot 2025-05-13 at 2.21.51 PM.png" alt="Helen Smith">
+          <h2>Helen Smith</h2>
+          <h3>TRADER</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="social-icons">
+            <i class="facebook"><img height="80px" width="80px" src="https://cdn-icons-png.freepik.com/256/15707/15707884.png?semt=ais_hybrid"></i>
+            <i class="twitter"><img height="80px" width="80px" src="https://cdn-icons-png.freepik.com/256/2111/2111463.png?semt=ais_hybrid"></i>
+            </i>
+            <i class="instagram">
+                <img height="80px" width="80px" src="https://cdn-icons-png.freepik.com/256/5968/5968830.png?ga=GA1.1.904181943.1747168002&semt=ais_hybrid">
+            </i>
+          </div>
+        </div>
+      </div>
+      <!-----------Our skills---------------------->
+      
+      
+      <h2>Our Skills</h2>
+      <section>
+        <div class="skills-main">
+          
+          <div class="skills-text">
+            <h4>Analysis</h4>
+            </div>
+            <div class="skills-container1">
+              <div class="skills-container2">
+                </div>
+                </div>
+                
+            
+                <div class="skills-main2">
+            <div class="skills-text">
+                  <h4>Exchange</h4>
+                  </div>
+                  <div class="skills-container12">
+                    <div class="skills-container22">
+                      </div>
+                      </div>
+                      </div>
+                      
+
+                      <div class="skills-main3">
+                        <div class="skills-text">
+                              <h4>Marketing</h4>
+                              </div>
+                              <div class="skills-container123">
+                                <div class="skills-container223">
+                                  </div>
+                                  </div>
+                                  </div>
+
+
+                                  <div class="skills-text">
+                                    <h4>Trade</h4>
+                                    </div>
+                                    <div class="skills-container1 skills-container4">
+                                      <div class="skills-container2 skills-container42">
+                                        </div>
+                                        </div>
+
+                                        <div class="skills-main2">
+                                          <div class="skills-text">
+                                                <h4>Processing</h4>
+                                                </div>
+                                                <div class="skills-container12 skills-container5">
+                                                  <div class="skills-container22 skills-container52">
+                                                    </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <div class="skills-main3">
+                                                      <div class="skills-text">
+                                                            <h4>Margin Trade</h4>
+                                                            </div>
+                                                            <div class="skills-container123 skills-container6">
+                                                              <div class="skills-container223 skills-container62">
+                                                                </div>
+                                                                </div>
+                                                                </div>
+                                             
+        </div>
+        </div>
+        </section>
+      
+
+
+      <!--Our Pricing-->
+        <h2>Our Pricing</h2>
+        
+        <div class="pricing-container">
+          <div class="card">
+            <h2>Free</h2>
+            <p>Lorem ipsum dolor</p>
+            <div class="price-section">
+              $<span>0</span> p/mo
+            </div>
+            <ul class="features">
+              <li>Wallets</li>
+              <li>Trade</li>
+              <li>Exchange</li>
+              <li>Processing</li>
+              <li>Analysis</li>
+            </ul>
+            <button>Get started</button>
+          </div>
+
+         
+          <div class="card">
+            <h2>Pro</h2>
+            <p>Lorem ipsum dolor</p>
+            <div class="price-section">
+              $<span>9.59</span> p/mo
+            </div>
+            <ul class="features">
+              <li>Wallets</li>
+              <li>Trade</li>
+              <li>Exchange</li>
+              <li>Processing</li>
+              <li>Analysis</li>
+            </ul>
+            <button>Get started</button>
+          </div>
+
+        
+          <div class="card">
+            <h2>Team</h2>
+            <p>Lorem ipsum dolor</p>
+            <div class="price-section">
+              $<span>24.99</span> p/mo
+            </div>
+            <ul class="features">
+              <li>Wallets</li>
+              <li>Trade</li>
+              <li>Exchange</li>
+              <li>Processing</li>
+              <li>Analysis</li>
+            </ul>
+            <button>Get started</button>
+          </div>
+          </div>
+         <!--Top Traders-->
+         <h2>Top Traders</h2>
+         <section class="toptraders">
+        
+
+          <div class="toptraders-main">
+              <div class="top-container">
+                  <span class="rank1">1</span>
+                  <div class="toptraders-card">
+                      <img class="top-image" height="50px" width="50px" src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face1.jpg " alt="face1">
+                      </div>
+                      <div class="toptraders-card-text">
+                          <h3 class="name1">Nicholas Daniels</h3>
+                          <p class="par1">3.5 BTC</P>
+                       </div>
+          </div>
+  
+          <div class="top-container">
+              <span class="rank1">5</span>
+              <div class="toptraders-card">
+                  <img class="top-image" height="50px" width="50px" src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face1.jpg " alt="face1">
+                  </div>
+                  <div class="toptraders-card-text">
+                      <h3 class="name1">Nicholas Daniels</h3>
+                      <p class="par1">3.5 BTC</P>
+                   </div>
+      </div>
+  
+  
+      <div class="top-container">
+          <span class="rank1">9</span>
+          <div class="toptraders-card">
+              <img class="top-image" height="50px" width="50px" src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face1.jpg " alt="face1">
+              </div>
+              <div class="toptraders-card-text">
+                  <h3 class="name1">Nicholas Daniels</h3>
+                  <p class="par1">3.5 BTC</P>
+               </div>
+  </div>
+  
+  </div>
+
+
+  <div class="toptraders-main">
+    <div class="top-container">
+        <span class="rank1">1</span>
+        <div class="toptraders-card">
+            <img class="top-image" height="50px" width="50px" src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face1.jpg " alt="face1">
+            </div>
+            <div class="toptraders-card-text">
+                <h3 class="name1">Nicholas Daniels</h3>
+                <p class="par1">3.5 BTC</P>
+             </div>
+</div>
+
+<div class="top-container">
+    <span class="rank1">5</span>
+    <div class="toptraders-card">
+        <img class="top-image" height="50px" width="50px" src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face1.jpg " alt="face1">
+        </div>
+        <div class="toptraders-card-text">
+            <h3 class="name1">Nicholas Daniels</h3>
+            <p class="par1">3.5 BTC</P>
+         </div>
+</div>
+
+
+<div class="top-container">
+<span class="rank1">9</span>
+<div class="toptraders-card">
+    <img class="top-image" height="50px" width="50px" src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face1.jpg " alt="face1">
+    </div>
+    <div class="toptraders-card-text">
+        <h3 class="name1">Nicholas Daniels</h3>
+        <p class="par1">3.5 BTC</P>
+     </div>
+</div>
+
+</div>
+
+
+<div class="toptraders-main">
+  <div class="top-container">
+      <span class="rank1">1</span>
+      <div class="toptraders-card">
+          <img class="top-image" height="50px" width="50px" src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face1.jpg " alt="face1">
+          </div>
+          <div class="toptraders-card-text">
+              <h3 class="name1">Nicholas Daniels</h3>
+              <p class="par1">3.5 BTC</P>
+           </div>
+</div>
+
+<div class="top-container">
+  <span class="rank1">5</span>
+  <div class="toptraders-card">
+      <img class="top-image" height="50px" width="50px" src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face1.jpg " alt="face1">
+      </div>
+      <div class="toptraders-card-text">
+          <h3 class="name1">Nicholas Daniels</h3>
+          <p class="par1">3.5 BTC</P>
+       </div>
+</div>
+
+
+<div class="top-container">
+<span class="rank1">9</span>
+<div class="toptraders-card">
+  <img class="top-image" height="50px" width="50px" src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face1.jpg " alt="face1">
+  </div>
+  <div class="toptraders-card-text">
+      <h3 class="name1">Nicholas Daniels</h3>
+      <p class="par1">3.5 BTC</P>
+   </div>
+</div>
+
+</div>
+
+<div class="toptraders-main">
+  <div class="top-container">
+      <span class="rank1">1</span>
+      <div class="toptraders-card">
+          <img class="top-image" height="50px" width="50px" src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face1.jpg " alt="face1">
+          </div>
+          <div class="toptraders-card-text">
+              <h3 class="name1">Nicholas Daniels</h3>
+              <p class="par1">3.5 BTC</P>
+           </div>
+</div>
+
+<div class="top-container">
+  <span class="rank1">5</span>
+  <div class="toptraders-card">
+      <img class="top-image" height="50px" width="50px" src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face1.jpg " alt="face1">
+      </div>
+      <div class="toptraders-card-text">
+          <h3 class="name1">Nicholas Daniels</h3>
+          <p class="par1">3.5 BTC</P>
+       </div>
+</div>
+
+
+<div class="top-container">
+<span class="rank1">9</span>
+<div class="toptraders-card">
+  <img class="top-image" height="50px" width="50px" src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face1.jpg " alt="face1">
+  </div>
+  <div class="toptraders-card-text">
+      <h3 class="name1">Nicholas Daniels</h3>
+      <p class="par1">3.5 BTC</P>
+   </div>
+</div>
+
+</div>
+  
+         
+      </section>
+         
+          
+
+
+<div class="videomaincontainer">
+          <p class="view">View in Action</p>
+          <p class="view2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor.</p>
+
+
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VA8PzkQa8d8?si=mzlQftfl_5ZS8Lyi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          </div>
+
+           <h2>Our Article</h2>
+          <div class="card2-main">
+            <div class="card2-container">
+              
+              <div class="card2">
+                <div class="card2-header">
+                  <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face1.jpg" class="avatar" alt="Avatar" />
+                  <span class="verified">✔️</span>
+                </div>
+                <img  src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/features1.jpg" class="card2-image" alt="Crypto Wallet" />
+                <h3>Crypto Wallets</h3>
+                <p>Lorem ipsum dolor</p>
+                <a href="#">Read more</a>
+              </div>
+          
+            
+              <div class="card2">
+                <div class="card2-header">
+                  <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face2.jpg" class="avatar" alt="Avatar" />
+                  <span class="verified">✔️</span>
+                </div>
+                <img  src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/features2.jpg" class="card2-image" alt="Margin Trade" />
+                <h3>Margin Trade</h3>
+                <p>Lorem ipsum dolor</p>
+                <a href="#">Read more</a>
+              </div>
+          
+              <div class="card2">
+                <div class="card2-header">
+                  <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face3.jpg" class="avatar" alt="Avatar" />
+                  <span class="verified">✔️</span>
+                </div>
+                <img  src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/features3.jpg" class="card2-image" alt="Exchange" />
+                <h3>Exchange</h3>
+                <p>Lorem ipsum dolor</p>
+                <a href="#">Read more</a>
+              </div>
+          
+              <div class="card2">
+                <div class="card2-header">
+                  <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face4.jpg" class="avatar" alt="Avatar" />
+                  <span class="verified">✔️</span>
+                </div>
+                <img   src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/features4.jpg" class="card2-image" alt="Cryptocurrency" />
+                <h3>Cryptocurrency</h3>
+                <p>Lorem ipsum dolor</p>
+                <a href="#">Read more</a>
+              </div>
+            </div>
+            </div>
+           <!--Our Clients-->
+            <h2>Our Clients</h2>
+
+            <div class="clients-header">
+              <div class="clients-main">
+                <div class="clients-container">
+                  <div class="clients-logo">
+                  <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/1.png" alt="Logo 1">
+                  </div>
+                </div>
+                
+            
+                <div class="clients-container">
+                <div class="clients-logo">
+                  <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/2.png" alt="Logo 2">
+                </div>
+                </div>
+            
+                <div class="clients-container">
+                <div class="clients-logo">
+                  <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/3.png" alt="Logo 3">
+                </div>
+                </div>
+            
+                <div class="clients-container">
+                <div class="clients-logo">
+                  <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/4.png" alt="Logo 4">
+                </div>
+                </div>
+                <div class="clients-container">
+                <div class="clients-logo">
+                  <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/1.png" alt="Logo 5">
+                </div>
+                </div>
+                <div class="clients-container">
+                <div class="clients-logo">
+                  <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/2.png" alt="Logo 6">
+                </div>
+                </div>
+            
+              
+              </div>
+              </div>
+              <!-------------------------------->
+<div class="lasttext-main">
+              <p class="text-last">Hold or Trade</p>
+              <p class="text-last2">Cryptocurrency</p>
+              <p class="text-last3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br>
+                 eiusmod tempor incididunt labore dolore magna aliqua.</p>
+                 </div>
+                
+<section class="section3">
+                 <div class="contact-main">
+                  <p class="text-contact">Contact Us</p>
+                  <p class="text-contact2">Lorem ipsum dolor sit amet,<br>
+                     consectetur adipiscing elit sed eiusmod temp.</p>
+                 </div>
+               
+    <div class="Contact-name">           
+    <label for="student name"></label>
+    <input 
+    id="student name"
+    type="text"
+    placeholder=" your name"
+    >
+    </div>
+    <br>
+
+    <div class="Contact-email">
+    <label for="student email"></label>
+    <input
+    id="student email"
+    type="email"
+    placeholder=" your email"
+    >
+    </div>
+    <br>
+
+    <div class="Contact-message">
+    <label for="student message"></label>
+    <textarea
+    id="student message"
+    placeholder=" your message"
+    ></textarea>
+    </div>
+    <br>
+    <button class="button3">Send message</button>
+    
+    </section>
+
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12090.519340298428!2d-73.985008!3d40.74817!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9ac1f1b85%3A0x7e33d1c0e7af3be4!2s350%205th%20Ave%2C%20New%20York%2C%20NY%2010118!5e0!3m2!1sen!2sus!4v1747257740365!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    
+<!--Footer-->
+    <footer>
+      <div class="footer-main">
+      <p class="footer1">Crypto M5</p>
+        <p class="footer2">© Copyright 2025 Mobirise</p>
+      
+        <div class="social-icons footer-icons">
+          <i class="facebook2"><img height="50px" width="50px" src="https://cdn-icons-png.freepik.com/256/15707/15707884.png?semt=ais_hybrid"></i>
+          <i class="twitter2"><img height="50px" width="50px" src="https://cdn-icons-png.freepik.com/256/2111/2111463.png?semt=ais_hybrid"></i>
+          </i>
+          <i class="instagram2">
+              <img height="50px" width="50px" src="https://cdn-icons-png.freepik.com/256/5968/5968830.png?ga=GA1.1.904181943.1747168002&semt=ais_hybrid">
+          </i>
+        </div>
+
+        </div>
+
+  </body>
+</html>
